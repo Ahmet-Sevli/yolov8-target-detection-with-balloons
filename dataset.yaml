@@ -1,0 +1,10 @@
+path: C:/Users/asus/Desktop/balon_yolo
+
+train: C:/Users/asus/Desktop/balon_yolo/images/train
+
+val: C:/Users/asus/Desktop/balon_yolo/images/val
+
+nc: 1
+
+names:
+  0: balon
