@@ -1,12 +1,16 @@
 import cv2 as cv
 from ultralytics import YOLO
 import numpy as np
+from pathlib import Path
 
-# YOLO modelini yükle (kendi yolunu değiştir)
-model = YOLO('C:/Users/asus/Desktop/balon_yolo/runs/detect/train4/weights/best.pt')
+# Bu dosyanın bulunduğu klasör
+BASE_DIR = Path(__file__).resolve().parent
 
+# runs/detect/train4/weights/best.pt dosyasına göreli yol
+weights_path = BASE_DIR / "runs" / "detect" / "train4" / "weights" / "best.pt"
 
-
+# Modeli yükle
+model = YOLO(str(weights_path))
 
 # Kamera veya video kaynağı (0 = webcam)
 kamera = cv.VideoCapture(0)
