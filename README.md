@@ -60,3 +60,23 @@ En yüksek toplam puana sahip nesne **öncelikli tehdit** olarak işaretlenir.
 
 ### 📂 Proje Yapısı
 
+project/
+│
+├── runs/
+│ └── detect/
+│ └── train4/
+│ └── weights/
+│ └── best.pt
+│
+├── main.py
+└── README.md
+
+📷 Kullanım
+
+Program varsayılan olarak webcam (index 0) kullanır.
+
+Her tespit edilen balon ekranda ID ile gösterilir.
+
+En yüksek öncelikli tehdit kırmızı, diğerleri sarı renkte gösterilir.
+
+Çıkış için q veya ESC tuşuna basın.
